@@ -3,25 +3,28 @@ import { useState } from "react";
 import Button from "./ui/Button";
 
 const navLinks = [
-  { href: "#home", label: "Home" },
   { href: "#about", label: "About" },
-  { href: "#portfolio", label: "Portfolio" },
+  { href: "#portfolio", label: "Work" },
   { href: "#services", label: "Services" },
-  { href: "#contact", label: "Contact" },
 ];
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-[var(--background)]/80 backdrop-blur-md shadow-sm font-sans">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-[var(--background)]/90 backdrop-blur-md border-b border-[var(--border)]">
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between h-16">
-        {/* Logo */}
+        {/* Brand */}
         <a
           href="#home"
-          className="text-xl font-semibold text-[var(--foreground)] font-sans"
+          className="flex flex-col leading-tight"
         >
-          Muhammed Diab Ghanim
+          <span className="text-lg font-semibold text-[var(--foreground)]">
+            Fast Business Websites
+          </span>
+          <span className="text-xs text-[var(--muted-foreground)]">
+            Built by Muhammed Diab Ghanim
+          </span>
         </a>
 
         {/* Desktop Navigation */}
@@ -30,7 +33,7 @@ export default function Navbar() {
             <a
               key={link.href}
               href={link.href}
-              className="text-sm font-medium text-[var(--muted-foreground)] hover:text-[var(--foreground)] transition-colors duration-200"
+              className="text-sm font-medium text-[var(--muted-foreground)] hover:text-[var(--foreground)] transition-colors"
             >
               {link.label}
             </a>
@@ -53,20 +56,24 @@ export default function Navbar() {
 
       {/* Mobile Navigation */}
       {isOpen && (
-        <div className="md:hidden absolute top-16 left-0 right-0 bg-[var(--background)] border-b border-[var(--border)] font-sans">
-          <div className="max-w-7xl mx-auto px-6 py-4 flex flex-col gap-4">
+        <div className="md:hidden absolute top-16 left-0 right-0 bg-[var(--background)] border-b border-[var(--border)]">
+          <div className="px-6 py-6 flex flex-col gap-5">
             {navLinks.map((link) => (
               <a
                 key={link.href}
                 href={link.href}
-                className="text-sm text-[var(--muted-foreground)] hover:text-[var(--foreground)] transition-colors py-2"
                 onClick={() => setIsOpen(false)}
+                className="text-sm font-medium text-center text-[var(--muted-foreground)] hover:text-[var(--foreground)] transition"
               >
                 {link.label}
               </a>
             ))}
 
-            <Button size="sm" href="#contact" onClick={() => setIsOpen(false)}>
+            <Button
+              size="sm"
+              href="#contact"
+              onClick={() => setIsOpen(false)}
+            >
               Get in Touch
             </Button>
           </div>
