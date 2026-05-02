@@ -19,10 +19,6 @@ export default function Hero() {
             mounted ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
           }`}
         >
-          {/* Eyebrow */}
-          <p className="text-sm uppercase tracking-wide text-[var(--accent2)] mb-4">
-            Websites for Small Businesses
-          </p>
 
           {/* Headline */}
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[var(--foreground)] leading-tight mb-6">
@@ -47,11 +43,6 @@ export default function Hero() {
               See My Work
             </Button>
           </div>
-
-          {/* Trust line */}
-          <p className="mt-6 text-sm text-[var(--muted-foreground)]">
-            Built by Muhammed Diab · Delivered in 5–7 days
-          </p>
         </div>
       </div>
     </section>

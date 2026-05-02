@@ -37,11 +37,11 @@ export default function About() {
         {/* Intro */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-[var(--foreground)] mb-4">
-            Built for Small Businesses
+            Built for Service Businesses
           </h2>
 
           <p className="text-lg text-[var(--muted-foreground)] max-w-2xl mx-auto">
-            Many small business websites are slow, outdated, or hard to use. I help fix that by building clean, fast websites that look professional and make it easy for customers to contact you.
+            Many service-based businesses have websites that are slow, outdated, or hard to use. I help fix that by building clean, fast websites that look professional and make it easy for customers to contact you.
             <br /><br />
             I leverage modern tools and technologies to ensure your site is fast, responsive, and scalable — without you ever needing to worry about the technical side.
           </p>

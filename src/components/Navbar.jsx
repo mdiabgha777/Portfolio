@@ -1,7 +1,7 @@
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import Button from "./ui/Button";
-
+import logo from "../assets/MyLogo.png";
 const navLinks = [
   { href: "#about", label: "About" },
   { href: "#portfolio", label: "Work" },
@@ -15,17 +15,17 @@ export default function Navbar() {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-[var(--background)]/90 backdrop-blur-md border-b border-[var(--border)]">
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between h-16">
         {/* Brand */}
-        <a
-          href="#home"
-          className="flex flex-col leading-tight"
-        >
-          <span className="text-lg font-semibold text-[var(--foreground)]">
-            Fast Business Websites
-          </span>
-          <span className="text-xs text-[var(--muted-foreground)]">
-            Built by Muhammed Diab Ghanim
-          </span>
-        </a>
+        <div>
+          <a
+            href="#home"
+            className="flex items-center gap-3"
+          >
+            <img src={logo} alt="Logo" className="w-20 h-20 object-contain" />
+            <span className="text-lg font-semibold text-[var(--foreground)] whitespace-nowrap">
+              Muhammed Diab Ghanim
+            </span>
+          </a>
+        </div>
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center gap-8">
