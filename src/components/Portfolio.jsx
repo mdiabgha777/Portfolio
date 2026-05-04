@@ -2,31 +2,47 @@ import Button from "./ui/Button";
 import Project1 from "../assets/portfolio1.png";
 import Project2 from "../assets/portfolio2.png";
 import Project3 from "../assets/portfolio3.png";
+import Project4 from "../assets/portfolio4.png";
+import Project5 from "../assets/portfolio5.png";
+import Project6 from "../assets/portfolio6.png";
+
 
 const projects = [
   {
-    title: "Local Fashion Website",
-    description:
-      "Redesigned the website for a restaurant, improving mobile usability and speeding up load times. Resulted in a 25% increase in reservations.",
+    title: "Jummah Fits - Fashion Website",
     image: Project1,
     link: "#contact", // sales CTA
     liveLink: "https://jummah-fits.vercel.app/", // Vercel live demo
   },
   {
-    title: "Local Plumbing Services Website",
-    description:
-      "Built a conversion-focused landing page for a fitness studio. Simplified booking process increased sign-ups by 40%.",
+    title: "Manneh & Son's Plumbing",
     image: Project2,
     link: "#contact",
     liveLink: "https://manneh-sons-plumbing.vercel.app/",
   },
   {
-    title: "Local Business Website",
-    description:
-      "Developed a fast, modern website for a dental clinic. Optimized SEO and mobile design to attract new patients.",
+    title: "LightZone Co. - Local Business Website",
     image: Project3,
     link: "#contact",
     liveLink: "https://lightzone-co-ltd.vercel.app",
+  },
+  {
+    title: "Big Bite Fast Food - Restaurant Website",
+    image: Project4,
+    link: "#contact",
+    liveLink: "https://big-bite-fast-food.vercel.app",
+  },
+    {
+    title: "Minaz Tasty Foods - Restaurant Website",
+    image: Project5,
+    link: "#contact",
+    liveLink: "https://minaz-tasty-foods.vercel.app",
+  },
+    {
+    title: "Climate Health Champions - Non-Profit Website",
+    image: Project6,
+    link: "#contact",
+    liveLink: "https://climate-health-champions.vercel.app",
   },
 ];
 

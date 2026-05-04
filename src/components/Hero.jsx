@@ -35,7 +35,7 @@ export default function Hero() {
           {/* CTA */}
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Button variant="hero" size="md" href="#contact">
-              Get a Free Website Audit
+              Get in touch
               <ArrowRight size={18} className="ml-2" />
             </Button>
 

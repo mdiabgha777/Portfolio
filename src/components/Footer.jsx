@@ -10,7 +10,7 @@ export default function Footer() {
             Muhammed Diab Ghanim
           </h3>
           <p className="text-[var(--muted-foreground)] text-sm">
-            Frontend Developer | Helping small businesses grow online
+            Frontend Developer | Websites for service businesses
           </p>
         </div>
 
