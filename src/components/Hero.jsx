@@ -28,8 +28,7 @@ export default function Hero() {
 
           {/* Subheadline */}
           <p className="text-lg md:text-xl text-[var(--muted-foreground)] mb-10 max-w-2xl mx-auto">
-            I build clean, mobile-first websites for small businesses that load
-            fast, look professional, and actually help you get more leads.
+            Modern, professional, mobile-friendly websites for service businesses that build trust and help you get more leads.
           </p>
 
           {/* CTA */}

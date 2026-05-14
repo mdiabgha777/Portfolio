@@ -56,8 +56,7 @@ export default function Portfolio() {
             My Work
           </h2>
           <p className="text-lg text-[var(--muted-foreground)] max-w-2xl mx-auto">
-            I help small businesses grow online. Here are a few examples of websites
-            I’ve built that are fast, mobile-friendly, and designed to convert visitors into customers.
+            Check out some of my lastest projects. Each one is built with the same focus on clean design and mobile-first responsiveness that I bring to every site I create.
           </p>
         </div>
 

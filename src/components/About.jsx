@@ -24,7 +24,7 @@ const qualities = [
 const techStack = [
   "React.js",
   "Tailwind CSS",
-  "WordPress",
+  "Node js",
   "HTML5",
   "CSS3",
   "JavaScript",
@@ -41,9 +41,13 @@ export default function About() {
           </h2>
 
           <p className="text-lg text-[var(--muted-foreground)] max-w-2xl mx-auto">
-            Many service-based businesses have websites that are slow, outdated, or hard to use. I help fix that by building clean, fast websites that look professional and make it easy for customers to contact you.
-            <br /><br />
-            I leverage modern tools and technologies to ensure your site is fast, responsive, and scalable — without you ever needing to worry about the technical side.
+            Most service businesses lose customers online before they ever make contact — because their website looks outdated, loads slowly, or simply doesn't exist.
+            <br />
+            I build clean, fast, mobile-first websites for service businesses. Sites that look professional, communicate your value clearly, and make it effortless for customers to reach you.
+            <br />
+            Every site I build uses modern React and Tailwind — fully responsive on every device, fast loading, and built to represent your business the way it deserves to be represented online.
+            <br />
+            If your business deserves to look as professional online as you are in person — let's work together.
           </p>
         </div>
 
@@ -85,11 +89,6 @@ export default function About() {
             ))}
           </div>
         </div>
-
-        {/* Credibility line */}
-        <p className="mt-12 text-center text-sm text-[var(--muted-foreground)]">
-          Websites delivered in 5–7 days · Clear pricing · No long-term contracts
-        </p>
       </div>
     </section>
   );
